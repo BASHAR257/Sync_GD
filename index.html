@@ -3,41 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App Home Page</title>
+    <title>File Sync Application - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
-            text-align: center;
+            padding: 0;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 50px auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         h1 {
             color: #333;
+            text-align: center;
         }
         p {
             color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            color: #555;
+            line-height: 1.8;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My App</h1>
-        <p>This application helps you synchronize your files and folders with Google Drive securely and efficiently.</p>
-        <p><strong>Features:</strong></p>
-        <ul>
-            <li>Manual file and folder selection for synchronization</li>
-            <li>Background operation even in power-saving mode</li>
-            <li>Google Drive integration for file security and privacy</li>
-        </ul>
-        <p>If you have any questions, feel free to contact us at support@example.com.</p>
+
+<div class="container">
+    <h1>Welcome to the File Sync Application</h1>
+
+    <p>
+        Our application helps you manually synchronize your selected files and folders with your Google Drive account. 
+        This ensures that your important data is always available and secure in the cloud. 
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li>Manually select files and folders for synchronization with Google Drive.</li>
+        <li>Syncs files automatically when changes are detected in the selected folders.</li>
+        <li>Runs seamlessly in the background, even when power-saving mode is enabled.</li>
+        <li>Full control over which subfolders or files inside a main folder are excluded from synchronization (e.g., exclude `node_modules`).</li>
+        <li>Secure login using your Google account to authorize access to Google Drive.</li>
+        <li>User privacy is a priority – no one can access your files except you.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <p>
+        After installing the application, follow these simple steps:
+    </p>
+    <ol>
+        <li>Launch the application and sign in with your Google account.</li>
+        <li>Select the files or folders you want to sync with your Google Drive.</li>
+        <li>Configure advanced settings, such as excluding specific subfolders from synchronization.</li>
+        <li>Let the application run in the background to automatically keep your files synced.</li>
+    </ol>
+
+    <h2>Privacy and Security</h2>
+    <p>
+        We take your privacy seriously. All file transfers are encrypted, and you have full control over your data.
+        You can access, modify, and delete synchronized files at any time.
+    </p>
+
+    <div class="footer">
+        <p>
+            For more information, visit our <a href="#">Privacy Policy</a> or <a href="#">Terms of Service</a>.
+        </p>
+        <p>
+            If you have any questions, feel free to <a href="mailto:support@yourapp.com">contact us</a>.
+        </p>
     </div>
+</div>
+
 </body>
 </html>
